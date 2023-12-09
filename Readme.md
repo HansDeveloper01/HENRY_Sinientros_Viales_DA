@@ -9,11 +9,11 @@
 
 ## Estructura de los Datos
 
-#### Los datos originales se recibieron en un libro de Excel llamado "homicidios" con dos hojas: "hechos" y "lesiones". Inicialmente se realizó un análisis exploratorio en el notebook "1 Análisis inicial" para entender la estructura de los dataframes, sus dimensiones, la presencia de valores nulos, entre otros aspectos relevantes.
+#### Los datos originales se recibieron en un libro de Excel llamado "homicidios" con dos hojas: "hechos" y "lesiones". Inicialmente se realizó un análisis exploratorio en el notebook ["1 Análisis inicial.ipynb"](/1%20Análisis%20inicial.ipynb) para entender la estructura de los dataframes, sus dimensiones, la presencia de valores nulos, entre otros aspectos relevantes.
 
 ## (ETL) Extracción, Transformación y Carga
 
-#### En el notebook "2 ETL", se llevó a cabo el proceso de ETL utilizando librerías como Numpy, Pandas, BeautifulSoup y Requests en Python. Se extrajeron datos de ambas hojas del libro de Excel, se realizaron transformaciones como la eliminación de columnas redundantes, normalización de tipos de datos y merge entre los dataframes. Se abordó la imputación de valores nulos, sustituyendo "SD" por etiquetas más descriptivas y, en algunos casos, imputando valores basados en estadísticas como la media de edades presentes en el conjunto de datos.
+#### En el notebook ["2 ETL.ipynb"](/2%20ETL.ipynb), se llevó a cabo el proceso de ETL utilizando librerías como Numpy, Pandas, BeautifulSoup y Requests en Python. Se extrajeron datos de ambas hojas del libro de Excel, se realizaron transformaciones como la eliminación de columnas redundantes, normalización de tipos de datos y merge entre los dataframes. Se abordó la imputación de valores nulos, sustituyendo "SD" por etiquetas más descriptivas y, en algunos casos, imputando valores basados en estadísticas como la media de edades presentes en el conjunto de datos.
 
 #### Además, se utilizó web scraping para obtener datos históricos de la población de Buenos Aires desde Wikipedia, con el objetivo de analizar la variabilidad en la población y correlacionarla con las tasas de accidentes en el período de 2016 a 2021.
 
@@ -27,7 +27,7 @@
 
 ## (EDA) Análisis Exploratorio de Datos
 
-#### En la etapa del EDA, se utilizó Python con librerías como Pandas, Numpy, Matplotlib y warnings para explorar en profundidad los datos. Se generaron gráficos para comprender aspectos clave del problema:
+#### En la etapa del EDA, alojado en el notebook ["3 EDA.ipynb"](/3%20EDA.ipynb) se utilizó Python con librerías como Pandas, Numpy, Matplotlib y warnings para explorar en profundidad los datos. Se generaron gráficos para comprender aspectos clave del problema:
 
 ####    - Tendencia de índices de accidentalidad a lo largo de los años.
 ####    - Cantidad de víctimas por accidente, distribución por sexo y edades.
@@ -108,7 +108,7 @@
 
 #### Estos resultados brindan una base sólida para orientar estrategias de prevención de accidentes y mejorar la seguridad vial, invitando a investigaciones más detalladas para comprender a fondo los determinantes subyacentes a estas tendencias y ofrecer soluciones más precisas y efectivas en la prevención de accidentes de tránsito.
 
-## Dashboard en Power BI
+## Dashboard en Power BI [Dashboard](/Dashboard.pbix)
 
 ### Página 1: Análisis Temporal
 
